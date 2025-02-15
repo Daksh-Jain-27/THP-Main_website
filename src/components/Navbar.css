@@ -1,5 +1,5 @@
 .navbar {
-    background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+    background: #333333; 
     height: 80px;
     display: flex;
     justify-content: center;
@@ -8,6 +8,7 @@
     position: sticky;
     top: 0;
     z-index: 999;
+    padding: 0 20px;
   }
   
   .navbar-container {
@@ -19,20 +20,28 @@
   }
   
   .navbar-logo {
-    color: #fff;
-    justify-self: start;
-    margin-left: 10px;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 2rem;
     display: flex;
-    align-items:center;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: bold;
+    position: absolute;
+    top:15px;
+    left:20px;
   }
-  
+  .logo {
+    height: 50px; /* Adjust size */
+    width: 300px; /* Keep aspect ratio */
+    margin-right: 10px;
+    /* align-items: center; */
+    
+  }
   .fa-typo3 {
     margin-left: 0.5rem;
     font-size: 1.8rem;
   }
+  
   
   .nav-menu {
     display: grid;
