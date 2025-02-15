@@ -4,14 +4,20 @@
     padding: 0;
     font-family: 'PT Sans', sans-serif;
   }
+  
+  
 #home {
     display: flex;
     height: 100vh;
+    /* background: url("../../images/img2.webp") no-repeat center center/cover; */
     /* height: 90vh; */
-    align-items: center;
-    justify-content: center;
-    font-size: 3rem;
-    background-color: blue;
+    /* align-items: center; */
+    padding-top: 70px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    
+    font-size: 2.5rem;
+    /* background-color: blue; */
   }
   
 #about {
@@ -19,11 +25,14 @@
     
     display: flex;
     height: 100vh;
+    padding-top: 70px;
+    margin-top: 30px;
+    margin-bottom: 20px;
     /* height: 90vh; */
     align-items: center;
     justify-content: center;
     font-size: 3rem;
-    background-color: orange;
+    /* background-color: orange; */
   }
   #team {
     /* background-image: url('./images/img-2.jpg'); */
@@ -34,7 +43,7 @@
     justify-content: center;
     font-size: 3rem;
     /* height: 100vh; */
-    background-color: greenyellow;
+    /* background-color: greenyellow; */
   }
   #timeline {
     /* background-image: url('./images/img-2.jpg'); */
@@ -44,7 +53,7 @@
     align-items: center;
     justify-content: center;
     font-size: 3rem;
-    background-color: green;
+    /* background-color: green; */
   }
   #competitions {
     /* background-image: url('./images/img-2.jpg'); */
@@ -54,7 +63,7 @@
     align-items: center;
     justify-content: center;
     font-size: 3rem;
-    background-color:grey;
+    /* background-color:grey; */
   }
   #gallery {
     /* background-image: url('./images/img-2.jpg'); */
@@ -64,8 +73,9 @@
     align-items: center;
     justify-content: center;
     font-size: 3rem;
-    background-color: yellow;
+    /* background-color: yellow; */
   }
+  
   #sponsors {
     /* background-image: url('./images/img-2.jpg'); */
     display: flex;
@@ -74,7 +84,7 @@
     align-items: center;
     justify-content: center;
     font-size: 3rem;
-    background-color:red;
+    /* background-color:red; */
   }
   #contact {
     /* background-image: url('./images/img-2.jpg'); */
@@ -84,5 +94,117 @@
     align-items: center;
     justify-content: center;
     font-size: 3rem;
-    background-color:pink;
+    /* background-color:pink; */
   }
+  @keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  .raised-bg {
+    background: #7B2C42; /* Base color */
+    height: 100vh;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5); /* Adds depth */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+  }
+  
+  #h1{
+   color: #d6c8dc;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .animated-bg {
+    position: relative;
+    min-height: 100vh;
+    background: #2b151b; /* Dark theme background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Left & Right Colored Frames */
+  .animated-bg::before,
+.animated-bg::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100px; /* Adjust thickness */
+    height: 100%;
+    background: linear-gradient(to bottom, #7B2C42, #4A235A); /* Your theme color */
+    z-index: 1;
+
+    /* Soft Glow Effect */
+    box-shadow: 0px 0px 20px rgba(123, 44, 66, 0.7);
+
+    /* Transparent Edge Effect */
+    opacity: 0.9;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Add a pulsating glow animation */
+@keyframes pulseGlow {
+    0% { box-shadow: 0px 0px 20px rgba(123, 44, 66, 0.7); }
+    50% { box-shadow: 0px 0px 30px rgba(123, 44, 66, 0.9); }
+    100% { box-shadow: 0px 0px 20px rgba(123, 44, 66, 0.7); }
+}
+
+.animated-bg::before {
+    left: 0;
+    animation: pulseGlow 2s infinite ease-in-out;
+}
+
+.animated-bg::after {
+    right: 0;
+    animation: pulseGlow 2s infinite ease-in-out;
+}
+
+/* Responsive: Reduce thickness on smaller screens */
+@media screen and (max-width: 900px) {
+    .animated-bg::before,
+    .animated-bg::after {
+        width: 40px; /* Reduce frame width */
+    }
+}
+
+  .image-container {
+    display: flex;
+    justify-content: center; /* Centers images horizontally */
+    align-items: center;
+    gap: 20px; /* Space between images */
+    margin-top: 20px;
+    flex-wrap: wrap; /* Ensures responsiveness */
+}
+  /* Ensure image doesn't overflow */
+  .animated-bg img {
+    max-width: 250px; /* Set a fixed width */
+    height: 70%; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional rounded corners */
+    
+    /* 3D Shadow Effect */
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.6), 
+                -10px -10px 30px rgba(255, 255, 255, 0.1);
+
+    /* Slight 3D Perspective */
+    transform: perspective(1000px) rotateX(10deg);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  .animated-bg img:hover {
+    transform: perspective(1000px) rotateX(0deg) scale(1.05);
+    box-shadow: 15px 15px 35px rgba(0, 0, 0, 0.8), 
+                -15px -15px 35px rgba(255, 255, 255, 0.2);
+  }
+  @media screen and (max-width: 768px) {
+    .image-container {
+        flex-direction: column; /* Stack images vertically */
+    }
+
+    .robot-image {
+        max-width: 80%; /* Adjust width for mobile */
+    }
+}
