@@ -2,6 +2,7 @@ import './home.css';
 import img2 from '../../images/img2.webp';
 import img3 from '../../images/img3.webp'; // Add more images
 import img4 from '../../images/img4.webp';
+import Timeline from './timeline';
 
 function Home() {
     return (
@@ -36,7 +37,8 @@ function Home() {
                 </section>
 
                 <section id="timeline">
-                    <h1>Timeline</h1>
+                    {/* <h1>Timeline</h1> */}
+                    <Timeline/>
                 </section>
 
                 <section id="competitions">

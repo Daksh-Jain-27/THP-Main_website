@@ -5,22 +5,22 @@ import { Button } from './button';
 import img1 from '../images/img1.png'
 function Navbar() {
     const [click,setClick]=useState(false);
-    const [button,setButton]=useState(true);
+    // const [button,setButton]=useState(true);
     const handleClick=()=>setClick(!click);
     const closeMobileMenu= ()=> setClick(false);
    
-    const showButton=()=>{
-      if(window.innerWidth<=2000){
-        setButton(false);
-      }
-      else{
-        setButton(true);
-      }
-    };
-    useEffect(()=>{
-      showButton();
-    })
-    window.addEventListener('resize',showButton);
+    // const showButton=()=>{
+    //   if(window.innerWidth<=1000){
+    //     setButton(false);
+    //   }
+    //   else{
+    //     setButton(true);
+    //   }
+    // };
+    // useEffect(()=>{
+    //   showButton();
+    // })
+    // window.addEventListener('resize',showButton);
   return (
    <>
     <nav className="navbar">
@@ -50,7 +50,7 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <a href="#timeline" className="nav-links" onClick={closeMobileMenu}>
-                Timeline
+                Our Journey
               </a>
             </li>
             <li className="nav-item">
@@ -74,7 +74,7 @@ function Navbar() {
               </a>
             </li>
           </ul>
-          {button && <Button buttonStyle="btn--outline">SIGN UP</Button>}
+          {/* {button && <Button buttonStyle="btn--outline">SIGN UP</Button>} */}
         </div>
       </nav>
    </>
