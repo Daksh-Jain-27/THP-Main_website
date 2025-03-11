@@ -72,12 +72,25 @@
 /* Mobile Menu Icon */
 .menu-icon {
   display: none;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+  z-index: 500;
 }
 
+@media screen and (max-width: 1100px) {
+  .menu-icon {
+    display: block; /* Show menu icon on mobile */
+  }
+}
 /* Responsive Design */
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1100px) {
   .navbar {
-    height: 60px;
+    height: 80px;
   }
 
   .navbar-logo {

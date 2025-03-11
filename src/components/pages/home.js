@@ -14,6 +14,7 @@ const competitions = [
     achievement: '🥇 1st Place - Business Plan',
   },
 ];
+import Timeline from './timeline';
 
 function Home() {
   const [showButton, setShowButton] = useState(false);
@@ -69,9 +70,10 @@ function Home() {
           <h1>Our Team</h1>
         </section>
 
-        <section id="timeline">
-          <h1>Timeline</h1>
-        </section>
+                <section id="timeline">
+                    {/* <h1>Timeline</h1> */}
+                    <Timeline/>
+                </section>
 
         <section id="competitions">
         <div className="competition-section" id="competitions">
