@@ -50,7 +50,7 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <a href="#timeline" className="nav-links" onClick={closeMobileMenu}>
-                Our Journey
+                 Journey
               </a>
             </li>
             <li className="nav-item">
@@ -58,11 +58,11 @@ function Navbar() {
                 Competitions
               </a>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <a href="#gallery" className="nav-links" onClick={closeMobileMenu}>
                 Gallery
               </a>
-            </li>
+            </li> */}
             <li className="nav-item">
               <a href="#sponsors" className="nav-links" onClick={closeMobileMenu}>
                 Sponsors

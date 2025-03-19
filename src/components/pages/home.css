@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: 'PT Sans', sans-serif;
+    
   }
   
   
@@ -14,39 +15,53 @@
     /* height: 90vh; */
     align-items: center;
     justify-content: center;
-    padding-top: 70px;
-    margin-top: 30px;
+    /* padding-top: 70px;
+    margin-top: 30px; */
     margin-bottom: 20px;
     
     font-size: 2.5rem;
+    
     /* background-color: blue; */
   }
+ 
   
 #about {
     /* background-image: url('./images/img-2.jpg'); */
-    
     display: flex;
     height: 100vh;
-    padding-top: 70px;
-    margin-top: 30px;
-    margin-bottom: 20px;
     /* height: 90vh; */
     align-items: center;
     justify-content: center;
     font-size: 3rem;
+    /* font-size: 4rem; */
+    margin-bottom: 30px;
+    /* font-size: 2.5rem; */
+    text-transform: uppercase;
+    font-weight: bold;
+    
+   
+   
     /* background-color: orange; */
   }
-  #team {
-    /* background-image: url('./images/img-2.jpg'); */
+  /* #team {
+  
     display: flex;
     height: 100vh;
-    /* height: 90vh; */
+    
     align-items: center;
     justify-content: center;
     font-size: 3rem;
-    /* height: 100vh; */
-    /* background-color: greenyellow; */
-  }
+   
+    text-transform: uppercase;
+    font-weight: bold;
+    
+    text-shadow: 0px 0px 10px rgba(255, 77, 77, 0.8),
+                 0px 0px 20px rgba(255, 77, 77, 0.6);
+    animation: glow 2s infinite alternate;
+   
+  } */
+
+
   #timeline {
     /* background-image: url('./images/img-2.jpg'); */
     display: flex;
@@ -68,19 +83,35 @@
     /* background-color:grey; */
   /* } */
 
+  .home_heading{
+    font-size:3rem;
+    margin-bottom: 30px;
+    /* font-size: 2.5rem; */
+    text-transform: uppercase;
+    font-weight: bold;
+    
+    text-shadow: 0px 0px 10px rgba(255, 77, 77, 0.8),
+                 0px 0px 20px rgba(255, 77, 77, 0.6);
+    animation: glow 2s infinite alternate;
+  }
   .competition-section {
     /* color: #E0E0E0;  */
     padding: 100px 0;
     text-align: center;
     height: 100vh;
+    
   }
   
   .section-title {
-    font-size: 3rem;
-    margin-bottom: 100px;
+    font-size:3rem;
+    margin-bottom: 30px;
+    /* font-size: 2.5rem; */
     text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #d6c8dc;
+    font-weight: bold;
+    
+    text-shadow: 0px 0px 10px rgba(255, 77, 77, 0.8),
+                 0px 0px 20px rgba(255, 77, 77, 0.6);
+    animation: glow 2s infinite alternate;
   }
   
   .achievement-container {
@@ -170,24 +201,57 @@
 /* Sponsors Section */
 #sponsors {
   display: flex;
-  flex-direction: column;
+  height: 100vh;
+  /* height: 90vh; */
   align-items: center;
   justify-content: center;
-  height: 60vh; /* Same height as other sections */
+  /* font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  /* font-size:4rem; */
+    /* margin-bottom: 30px;
+    /* font-size: 2.5rem; */
+    /* text-transform: uppercase;
+    font-weight: bold;
+    
+    text-shadow: 0px 0px 10px rgba(255, 77, 77, 0.8),
+                 0px 0px 20px rgba(255, 77, 77, 0.6); */
+    /* animation: glow 2s infinite alternate;  */
+  /* align-items: center;
+  justify-content: center; */
+  /* height: 1vh; Same height as other sections */
   padding: 50px 20px;
   background: #2b151b; /*Keeping the dark theme consistent */
-  color: white;
+  /* color: white; */
   text-align: center;
+  /* font-size: 4rem;
+  margin-bottom: 30px;
+  /* font-size: 2.5rem; */
+  text-transform: uppercase;
+  font-weight: bold; 
+/*   
+  text-shadow: 0px 0px 10px rgba(255, 77, 77, 0.8),
+               0px 0px 20px rgba(255, 77, 77, 0.6);
+  animation: glow 2s infinite alternate; */
 }
 
 /* Sponsors Heading */
 .sponsor-heading {
-  font-size: 3rem;
+  
   font-weight: bold;
-  color: #d6c8dc; /* Light color similar to other headings */
+  /* color: #d6c8dc; Light color similar to other headings */
   margin-bottom: 60px;
   text-transform: uppercase;
   letter-spacing: 2px;
+  font-size:3rem;
+    margin-bottom: 30px;
+    /* font-size: 2.5rem; */
+    text-transform: uppercase;
+    font-weight: bold;
+    
+    text-shadow: 0px 0px 10px rgba(255, 77, 77, 0.8),
+                 0px 0px 20px rgba(255, 77, 77, 0.6);
+    animation: glow 2s infinite alternate;
 }
 
 /* Sponsor Box */
@@ -250,6 +314,12 @@
 /* Contact Section */
 #contact {
   display: flex;
+  /* display: flex; */
+  height: 100vh;
+  /* height: 90vh; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* font-size: 3rem; */
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -262,12 +332,21 @@
 
 /* Contact Us Heading */
 .contact-heading {
-  font-size: 2.5rem;
+  /* font-size: 2.5rem; */
   font-weight: bold;
-  color: #d6c8dc; /* Soft pastel color to match theme */
+  /* color: #d6c8dc; Soft pastel color to match theme */
   margin-bottom: 30px;
   text-transform: uppercase;
   letter-spacing: 1px;
+  font-size:3rem;
+    margin-bottom: 30px;
+    /* font-size: 2.5rem; */
+    text-transform: uppercase;
+    font-weight: bold;
+    
+    text-shadow: 0px 0px 10px rgba(255, 77, 77, 0.8),
+                 0px 0px 20px rgba(255, 77, 77, 0.6);
+    animation: glow 2s infinite alternate;
 }
 
 /* Contact Info Wrapper */
@@ -350,7 +429,7 @@
     100% { background-position: 0% 50%; }
   }
   .raised-bg {
-    background: #7B2C42; /* Base color */
+    background: #7B2C42; 
     height: 100vh;
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5); /* Adds depth */
     display: flex;
@@ -361,8 +440,17 @@
   }
   
   #h1{
-   color: #d6c8dc;
+   /* color: #d6c8dc; */
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size:3rem;
+    margin-bottom: 30px;
+    /* font-size: 2.5rem; */
+    text-transform: uppercase;
+    font-weight: bold;
+    
+    text-shadow: 0px 0px 10px rgba(255, 77, 77, 0.8),
+                 0px 0px 20px rgba(255, 77, 77, 0.6);
+    animation: glow 2s infinite alternate;
   }
   .animated-bg {
     position: relative;
@@ -382,7 +470,7 @@
     content: "";
     position: absolute;
     top: 0;
-    width: 100px; /* Adjust thickness */
+    width: 7%; /* Adjust thickness */
     height: 100%;
     background: linear-gradient(to bottom, #7B2C42, #4A235A); /* Your theme color */
     z-index: 1;
@@ -424,9 +512,33 @@
     display: flex;
     justify-content: center; /* Centers images horizontally */
     align-items: center;
-    gap: 20px; /* Space between images */
+    gap: 250px; /* Space between images */
     margin-top: 20px;
     flex-wrap: wrap; /* Ensures responsiveness */
+}
+/* Reduce gap for smaller screens */
+@media (max-width: 1200px) {
+  .image-container {
+      gap: 200px;
+  }
+}
+
+@media (max-width: 992px) {
+  .image-container {
+      gap: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .image-container {
+      gap: 100px;
+  }
+}
+
+@media (max-width: 600px) {
+  .image-container {
+      gap: 50px;
+  }
 }
   /* Ensure image doesn't overflow */
   .animated-bg img {

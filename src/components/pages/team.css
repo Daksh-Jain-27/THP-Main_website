@@ -1,0 +1,122 @@
+/* Team Section */
+#team{
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.team-section {
+    text-align: center;
+    background-color: #391111;
+    padding: 100px 0;
+    width: 86%;
+    height: 100%;
+    margin-top: 30px;
+}
+
+/* Heading */
+.team-heading {
+    font-size: 2.5rem; 
+    font-weight: bold;
+    margin: 20px;
+    text-transform: uppercase;
+    color: white;
+}
+
+/* Team Container */
+.team-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    margin: auto;
+}
+
+/* Team Card */
+.team-card {
+    background: #9d7d7d;
+    border-radius: 15px;
+    width: 70%;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
+}
+
+/* Alternate Card Positioning */
+/* .team-card:nth-child(odd) {
+    flex-direction: row;
+    justify-content: flex-start;
+} */
+
+
+/* Team Member Image */
+.team-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #007bff;
+    margin: 15px 20px;
+    margin-bottom: 5px;
+    
+}
+
+/* Text Content */
+.team-content {
+    text-align: left;
+    flex: 1;
+}
+
+/* Team Member Name */
+.team-name {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: white;
+}
+
+/* Team Member Role */
+.team-role {
+    font-size: 1rem;
+    color: #ddd;
+    margin-bottom: 10px;
+}
+
+/* Social Icons */
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #007bff;
+    margin: 0 10px;
+    font-size: 1.3rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #0056b3;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .team-card {
+        flex-direction: column !important;
+        align-items: center;
+        text-align: center;
+        width: 90%;
+    }
+
+    .team-img {
+        margin-bottom: 10px;
+    }
+
+    .team-content {
+        text-align: center;
+    }
+}
