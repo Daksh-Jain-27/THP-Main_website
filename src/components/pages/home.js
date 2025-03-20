@@ -4,6 +4,7 @@ import img1 from '../../images/img1.png';
 import img3 from '../../images/img3.webp'; // Add more images
 import img4 from '../../images/img4.webp';
 import mbf from '../../images/mbf.jpg';
+import Timeline from './timeline';
 import React, { useState, useEffect } from 'react';
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaGithub } from 'react-icons/fa';
 
@@ -14,7 +15,6 @@ const competitions = [
     achievement: '🥇 1st Place - Business Plan',
   },
 ];
-import Timeline from './timeline';
 
 function Home() {
   const [showButton, setShowButton] = useState(false);
