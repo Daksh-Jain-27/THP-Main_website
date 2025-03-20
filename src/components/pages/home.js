@@ -7,6 +7,10 @@ import mbf from '../../images/mbf.jpg';
 import Timeline from './timeline';
 import React, { useState, useEffect } from 'react';
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaGithub } from 'react-icons/fa';
+import Timeline from './timeline';
+import Team from './team';
+// import AboutUs from './about';
+import MissionSection from './about';
 
 const competitions = [
   {
@@ -15,6 +19,7 @@ const competitions = [
     achievement: '🥇 1st Place - Business Plan',
   },
 ];
+
 
 function Home() {
   const [showButton, setShowButton] = useState(false);
@@ -63,11 +68,12 @@ function Home() {
         </section>
 
         <section id="about">
-          <h1>About Us</h1>
+         <MissionSection/>
         </section>
 
         <section id="team">
-          <h1>Our Team</h1>
+        <Team/>
+          
         </section>
 
                 <section id="timeline">
@@ -76,8 +82,9 @@ function Home() {
                 </section>
 
         <section id="competitions">
+          <br></br>
         <div className="competition-section" id="competitions">
-      <h2 className="section-title">Competitions</h2>
+      <h2 className="section-title" >Competitions</h2>
       
       <div className="achievement-container">
         <div className="achievement-card">
@@ -90,7 +97,7 @@ function Home() {
 
         <section id="sponsors">
           <div id="sponsor">
-            <h2 className="sponsor-heading">Our Sponsor</h2>
+            <h2 className="sponsor-heading"> Sponsors</h2>
             <div className="sponsor-container">
               <div className="sponsor-box">
                 <img src={mbf} alt="Maker Bhavan Foundation" className="sponsor-logo" />
